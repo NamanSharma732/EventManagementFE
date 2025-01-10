@@ -1,0 +1,775 @@
+// team
+export const initialStateTeam = {
+  teamCategory: "",
+  teamGender: "",
+  teamCountry: "",
+  teamName: "",
+  sortName: "",
+  imageURL: "",
+};
+
+// Ground inputData
+
+export const initialStateGround = {
+  groundName: "",
+  groundKnownas: "",
+  formatType: "",
+  groundCountry: "",
+  groundCity: "",
+  groundYear: "",
+  groundCapacity: "",
+  groundDescription:"",
+  pitchType:"",
+  pitchWidth:"",
+  pitchLength:"",
+  groundTimeZone: "",
+  groundImage: "",
+  menFirstTestMatch: "",
+  menFirstODIMatch: "",
+  menFirstT20IMatch: "",
+  womenFirstTestMatch: "",
+  womenFirstODIMatch: "",
+  womenFirstT20IMatch: "",
+  menLastTestMatch: "",
+  menLastODIMatch: "",
+  menLastT20IMatch: "",
+  womenLastTestMatch: "",
+  womenLastODIMatch: "",
+  womenLastT20IMatch: "",
+  menFirstTestMatchDate: "",
+  menFirstODIMatchDate: "",
+  menFirstT20IMatchDate: "",
+  womenFirstTestMatchDate: "",
+  womenFirstODIMatchDate: "",
+  womenFirstT20IMatchDate: "",
+  menLastTestMatchDate: "",
+  menLastODIMatchDate: "",
+  menLastT20IMatchDate: "",
+  womenLastTestMatchDate: "",
+  womenLastODIMatchDate: "",
+  womenLastT20IMatchDate: "",
+};
+
+// player info input
+export const initialStatePlayer = {
+  playerId: "",
+  playerName: "",
+  jerseyName: "",
+  born: "",
+  birthPlace: "",
+  nickName: "",
+  height: "",
+  age: "",
+  role: "",
+  battingStyle: "",
+  bowlingStyle: "",
+  origin: "",
+  battingStats: {
+    inningsTest: "",
+    inningsODI: "",
+    inningsT20: "",
+    inningsIPL: "",
+    catchesTest: "",
+    catchesODI: "",
+    catchesT20: "",
+    catchesIPL: "",
+    stumpsTest: "",
+    stumpsODI: "",
+    stumpsT20: "",
+    stumpsIPL: "",
+    runsTest: "",
+    runsODI: "",
+    runsT20: "",
+    runsIPL: "",
+    ballsTest: "",
+    ballsODI: "",
+    ballsT20: "",
+    ballsIPL: "",
+    highestTest: "",
+    highestODI: "",
+    highestT20: "",
+    highestIPL: "",
+    averageTest: "",
+    averageODI: "",
+    averageT20: "",
+    averageIPL: "",
+    strikeRateTest: "",
+    strikeRateODI: "",
+    strikeRateT20: "",
+    strikeRateIPL: "",
+    notOutTest: "",
+    notOutODI: "",
+    notOutT20: "",
+    notOutIPL: "",
+    foursTest: "",
+    foursODI: "",
+    foursT20: "",
+    foursIPL: "",
+    sixesTest: "",
+    sixesODI: "",
+    sixesT20: "",
+    sixesIPL: "",
+    ducksTest: "",
+    ducksODI: "",
+    ducksT20: "",
+    ducksIPL: "",
+    totalFiftiesTest: "",
+    totalFiftiesODI: "",
+    totalFiftiesT20: "",
+    totalFiftiesIPL: "",
+    totalHundredsTest: "",
+    totalHundredsODI: "",
+    totalHundredsT20: "",
+    totalHundredsIPL: "",
+    totalTwoHundredsTest: "",
+    totalTwoHundredsODI: "",
+    totalTwoHundredsT20: "",
+    totalTwoHundredsIPL: "",
+    totalThreeHundredsTest: "",
+    totalThreeHundredsODI: "",
+    totalThreeHundredsT20: "",
+    totalThreeHundredsIPL: "",
+  },
+  bowlingStats: {
+    inningsTest: "",
+    inningsODI: "",
+    inningsT20: "",
+    inningsIPL: "",
+    runsTest: "",
+    runsODI: "",
+    runsT20: "",
+    runsIPL: "",
+    ballsTest: "",
+    ballsODI: "",
+    ballsT20: "",
+    ballsIPL: "",
+    maidensTest: "",
+    maidensODI: "",
+    maidensT20: "",
+    maidensIPL: "",
+    wicketsTest: "",
+    wicketsODI: "",
+    wicketsT20: "",
+    wicketsIPL: "",
+    averageTest: "",
+    averageODI: "",
+    averageT20: "",
+    averageIPL: "",
+    strikeRateTest: "",
+    strikeRateODI: "",
+    strikeRateT20: "",
+    strikeRateIPL: "",
+    bbiTest: "",
+    bbiODI: "",
+    bbiT20: "",
+    bbiIPL: "",
+    bbfTest: "",
+    bbfODI: "",
+    bbfT20: "",
+    bbfIPL: "",
+    economyRateTest: "",
+    economyRateODI: "",
+    economyRateT20: "",
+    economyRateIPL: "",
+    fourWicketsTest: "",
+    fourWicketsODI: "",
+    fourWicketsT20: "",
+    fourWicketsIPL: "",
+    fiveWicketsTest: "",
+    fiveWicketsODI: "",
+    fiveWicketsT20: "",
+    fiveWicketsIPL: "",
+    tenWicketsTest: "",
+    tenWicketsODI: "",
+    tenWicketsT20: "",
+    tenWicketsIPL: "",
+  },
+  debutT20EventName: "",
+  debutT20EventDate: "",
+  debutODIEventName: "",
+  debutODIEventDate: "",
+  debutTESTEventName: "",
+  debutTESTEventDate: "",
+  debutIPLEventName: "",
+  debutIPLEventDate: "",
+  debutCLEventName: "",
+  debutCLEventDate: "",
+  lastPlayedT20EventName: "",
+  lastPlayedT20EventDate: "",
+  lastPlayedODIEventName: "",
+  lastPlayedODIEventDate: "",
+  lastPlayedTESTEventName: "",
+  lastPlayedTESTEventDate: "",
+  lastPlayedIPLEventName: "",
+  lastPlayedIPLEventDate: "",
+  lastPlayedCLEventName: "",
+  lastPlayedCLEventDate: "",
+  matchesTest: "",
+  matchesODI: "",
+  matchesT20: "",
+  matchesIPL: "",
+  nationalfirstCareer: "",
+  nationallastCareer: "",
+  playerImageUrl: "",
+};
+
+export const PlayerInitialData = (playerData) => {
+  return {
+    playerId: playerData?.playerId,
+    playerName: playerData?.playerName,
+    jerseyName: playerData?.jerseyName,
+    born: playerData?.playerInformation?.born?.split("T")[0],
+    birthPlace: playerData?.playerInformation?.birthPlace,
+    nickName: playerData?.playerInformation?.nickName,
+    height: playerData?.playerInformation?.height,
+    age: playerData?.playerInformation?.age,
+    role: playerData?.playerInformation?.role,
+    battingStyle: playerData?.playerInformation?.battingStyle,
+    bowlingStyle: playerData?.playerInformation?.bowlingStyle,
+    origin: playerData?.playerInformation?.origin,
+    battingStats: {
+      inningsTest: playerData?.battingStats?.innings?.TEST,
+      inningsODI: playerData?.battingStats?.innings?.ODI,
+      inningsT20: playerData?.battingStats?.innings?.T20,
+      inningsIPL: playerData?.battingStats?.innings?.IPL,
+      catchesTest: playerData?.battingStats?.catches?.TEST,
+      catchesODI: playerData?.battingStats?.catches?.ODI,
+      catchesT20: playerData?.battingStats?.catches?.T20,
+      catchesIPL: playerData?.battingStats?.catches?.IPL,
+      stumpsTest: playerData?.battingStats?.stumps?.TEST,
+      stumpsODI: playerData?.battingStats?.stumps?.ODI,
+      stumpsT20: playerData?.battingStats?.stumps?.T20,
+      stumpsIPL: playerData?.battingStats?.stumps?.IPL,
+      runsTest: playerData?.battingStats?.runs?.TEST,
+      runsODI: playerData?.battingStats?.runs?.ODI,
+      runsT20: playerData?.battingStats?.runs?.T20,
+      runsIPL: playerData?.battingStats?.runs?.IPL,
+      ballsTest: playerData?.battingStats?.balls?.TEST,
+      ballsODI: playerData?.battingStats?.balls?.ODI,
+      ballsT20: playerData?.battingStats?.balls?.T20,
+      ballsIPL: playerData?.battingStats?.balls?.IPL,
+      highestTest: playerData?.battingStats?.highest?.TEST,
+      highestODI: playerData?.battingStats?.highest?.ODI,
+      highestT20: playerData?.battingStats?.highest?.T20,
+      highestIPL: playerData?.battingStats?.highest?.IPL,
+      averageTest: 
+        playerData?.battingStats?.average?.TEST?.$numberDecimal
+      ,
+      averageODI: 
+        playerData?.battingStats?.average?.ODI?.$numberDecimal
+      ,
+      averageT20: 
+        playerData?.battingStats?.average?.T20?.$numberDecimal
+      ,
+      averageIPL: 
+        playerData?.battingStats?.average?.IPL?.$numberDecimal
+      ,
+      strikeRateTest: 
+        playerData?.battingStats?.strikeRate?.TEST?.$numberDecimal
+      ,
+      strikeRateODI: 
+        playerData?.battingStats?.strikeRate?.ODI?.$numberDecimal
+      ,
+      strikeRateT20: 
+        playerData?.battingStats?.strikeRate?.T20?.$numberDecimal
+      ,
+      strikeRateIPL: 
+        playerData?.battingStats?.strikeRate?.IPL?.$numberDecimal
+      ,
+      notOutTest: playerData?.battingStats?.notOut?.TEST,
+      notOutODI: playerData?.battingStats?.notOut?.ODI,
+      notOutT20: playerData?.battingStats?.notOut?.T20,
+      notOutIPL: playerData?.battingStats?.notOut?.IPL,
+      foursTest: playerData?.battingStats?.fours?.TEST,
+      foursODI: playerData?.battingStats?.fours?.ODI,
+      foursT20: playerData?.battingStats?.fours?.T20,
+      foursIPL: playerData?.battingStats?.fours?.IPL,
+      sixesTest: playerData?.battingStats?.sixes?.TEST,
+      sixesODI: playerData?.battingStats?.sixes?.ODI,
+      sixesT20: playerData?.battingStats?.sixes?.T20,
+      sixesIPL: playerData?.battingStats?.sixes?.IPL,
+      ducksTest: playerData?.battingStats?.ducks?.TEST,
+      ducksODI: playerData?.battingStats?.ducks?.ODI,
+      ducksT20: playerData?.battingStats?.ducks?.T20,
+      ducksIPL: playerData?.battingStats?.ducks?.IPL,
+      totalFiftiesTest: playerData?.battingStats?.totalFifties?.TEST,
+      totalFiftiesODI: playerData?.battingStats?.totalFifties?.ODI,
+      totalFiftiesT20: playerData?.battingStats?.totalFifties?.T20,
+      totalFiftiesIPL: playerData?.battingStats?.totalFifties?.IPL,
+      totalHundredsTest: 
+        playerData?.battingStats?.totalHundreds?.TEST
+      ,
+      totalHundredsODI: playerData?.battingStats?.totalHundreds?.ODI,
+      totalHundredsT20: playerData?.battingStats?.totalHundreds?.T20,
+      totalHundredsIPL: playerData?.battingStats?.totalHundreds?.IPL,
+      totalTwoHundredsTest: 
+        playerData?.battingStats?.totalTwoHundreds?.TEST
+      ,
+      totalTwoHundredsODI: 
+        playerData?.battingStats?.totalTwoHundreds?.ODI
+      ,
+      totalTwoHundredsT20: 
+        playerData?.battingStats?.totalTwoHundreds?.T20
+      ,
+      totalTwoHundredsIPL: 
+        playerData?.battingStats?.totalTwoHundreds?.IPL
+      ,
+      totalThreeHundredsTest: 
+        playerData?.battingStats?.totalThreeHundreds?.TEST
+      ,
+      totalThreeHundredsODI: 
+        playerData?.battingStats?.totalThreeHundreds?.ODI
+      ,
+      totalThreeHundredsT20: 
+        playerData?.battingStats?.totalThreeHundreds?.T20
+      ,
+      totalThreeHundredsIPL: 
+        playerData?.battingStats?.totalThreeHundreds?.IPL
+      ,
+    },
+    bowlingStats: {
+      inningsTest: playerData?.bowlingStats?.innings?.TEST,
+      inningsODI: playerData?.bowlingStats?.innings?.ODI,
+      inningsT20: playerData?.bowlingStats?.innings?.T20,
+      inningsIPL: playerData?.bowlingStats?.innings?.IPL,
+      runsTest: playerData?.bowlingStats?.runs?.TEST,
+      runsODI: playerData?.bowlingStats?.runs?.ODI,
+      runsT20: playerData?.bowlingStats?.runs?.T20,
+      runsIPL: playerData?.bowlingStats?.runs?.IPL,
+      ballsODI: playerData?.bowlingStats?.balls?.ODI,
+      ballsTest: playerData?.bowlingStats?.balls?.TEST,
+      ballsT20: playerData?.bowlingStats?.balls?.T20,
+      ballsIPL: playerData?.bowlingStats?.balls?.IPL,
+      maidensTest: playerData?.bowlingStats?.maidens?.TEST,
+      maidensODI: playerData?.bowlingStats?.maidens?.ODI,
+      maidensT20: playerData?.bowlingStats?.maidens?.T20,
+      maidensIPL: playerData?.bowlingStats?.maidens?.IPL,
+      wicketsTest: playerData?.bowlingStats?.wickets?.TEST,
+      wicketsODI: playerData?.bowlingStats?.wickets?.ODI,
+      wicketsT20: playerData?.bowlingStats?.wickets?.T20,
+      wicketsIPL: playerData?.bowlingStats?.wickets?.IPL,
+      averageTest: 
+        playerData?.bowlingStats?.average?.TEST?.$numberDecimal
+      ,
+      averageODI: 
+        playerData?.bowlingStats?.average?.ODI?.$numberDecimal
+      ,
+      averageT20: 
+        playerData?.bowlingStats?.average?.T20?.$numberDecimal
+      ,
+      averageIPL: 
+        playerData?.bowlingStats?.average?.IPL?.$numberDecimal
+      ,
+      strikeRateTest: 
+        playerData?.bowlingStats?.strikeRate?.TEST?.$numberDecimal
+      ,
+      strikeRateODI: 
+        playerData?.bowlingStats?.strikeRate?.ODI?.$numberDecimal
+      ,
+      strikeRateT20: 
+        playerData?.bowlingStats?.strikeRate?.T20?.$numberDecimal
+      ,
+      strikeRateIPL: 
+        playerData?.bowlingStats?.strikeRate?.IPL?.$numberDecimal
+      ,
+      bbiTest: playerData?.bowlingStats?.bbi?.TEST,
+      bbiODI: playerData?.bowlingStats?.bbi?.ODI,
+      bbiT20: playerData?.bowlingStats?.bbi?.T20,
+      bbiIPL: playerData?.bowlingStats?.bbi?.IPL,
+      bbmTest: playerData?.bowlingStats?.bbm?.TEST,
+      bbmODI: playerData?.bowlingStats?.bbm?.ODI,
+      bbmT20: playerData?.bowlingStats?.bbm?.T20,
+      bbmIPL: playerData?.bowlingStats?.bbm?.IPL,
+      economyRateTest: playerData?.bowlingStats?.economy?.TEST?.$numberDecimal,
+      economyRateODI: playerData?.bowlingStats?.economy?.ODI?.$numberDecimal,
+      economyRateT20: playerData?.bowlingStats?.economy?.T20?.$numberDecimal,
+      economyRateIPL: playerData?.bowlingStats?.economy?.IPL?.$numberDecimal,
+      fourWicketsTest: playerData?.bowlingStats?.fourWickets?.TEST,
+      fourWicketsODI: playerData?.bowlingStats?.fourWickets?.ODI,
+      fourWicketsT20: playerData?.bowlingStats?.fourWickets?.T20,
+      fourWicketsIPL: playerData?.bowlingStats?.fourWickets?.IPL,
+      fiveWicketsTest: playerData?.bowlingStats?.fiveWickets?.TEST,
+      fiveWicketsODI: playerData?.bowlingStats?.fiveWickets?.ODI,
+      fiveWicketsT20: playerData?.bowlingStats?.fiveWickets?.T20,
+      fiveWicketsIPL: playerData?.bowlingStats?.fiveWickets?.IPL,
+      tenWicketsTest: playerData?.bowlingStats?.tenWickets?.TEST,
+      tenWicketsODI: playerData?.bowlingStats?.tenWickets?.ODI,
+      tenWicketsT20: playerData?.bowlingStats?.tenWickets?.T20,
+      tenWicketsIPL: playerData?.bowlingStats?.tenWickets?.IPL,
+    },
+    debutT20EventName: playerData?.career?.debut?.T20?.eventName,
+    debutT20EventDate: playerData?.career?.debut?.T20?.eventDate?.split("T")[0],
+    debutODIEventName: playerData?.career?.debut?.ODI?.eventName,
+    debutODIEventDate: playerData?.career?.debut?.ODI?.eventDate?.split("T")[0],
+    debutTESTEventName: playerData?.career?.debut?.TEST?.eventName,
+    debutTESTEventDate: playerData?.career?.debut?.TEST?.eventDate?.split("T")[0],
+    debutIPLvEntName: playerData?.career?.debut?.IPL?.eventName,
+    debutIPLEventDate: playerData?.career?.debut?.IPL?.eventDate?.split("T")[0],
+    debutCLEventName: playerData?.career?.debut?.CL?.eventName,
+    debutCLEventDate: playerData?.career?.debut?.CL?.eventDate?.split("T")[0],
+    lastPlayedT20EventName: playerData?.career?.lastPlayed?.T20?.eventName,
+    lastPlayedT20EventDate: playerData?.career?.lastPlayed?.T20?.eventDate?.split("T")[0],
+    lastPlayedODIEventName: playerData?.career?.lastPlayed?.ODI?.eventName,
+    lastPlayedODIEventDate: playerData?.career?.lastPlayed?.ODI?.eventDate?.split("T")[0],
+    lastPlayedTESTEventName: playerData?.career?.lastPlayed?.TEST?.eventName,
+    lastPlayedTESTEventDate: playerData?.career?.lastPlayed?.TEST?.eventDate?.split("T")[0],
+    lastPlayedIPLEventName: playerData?.career?.lastPlayed?.IPL?.eventName,
+    lastPlayedIPLEventDate: playerData?.career?.lastPlayed?.IPL?.eventDate?.split("T")[0],
+    lastPlayedCLEventName: playerData?.career?.lastPlayed?.CL?.eventName,
+    lastPlayedCLEventDate: playerData?.career?.lastPlayed?.CL?.eventDate?.split("T")[0],
+    matchesTest: playerData?.matches?.TEST,
+    matchesODI: playerData?.matches?.ODI,
+    matchesT20: playerData?.matches?.T20,
+    matchesIPL: playerData?.matches?.IPL,
+    nationalfirstCareer: playerData?.nationalCareer!==""?playerData?.nationalCareer?.split("-")[0]:playerData?.nationalCareer || "",
+    nationallastCareer: playerData?.nationalCareer!==""?playerData?.nationalCareer?.split("-")[1]:playerData?.nationalCareer || "",
+    playerImageUrl: playerData?.playerImageUrl,
+  };
+};
+
+// export const initialStatePlayer = {
+//   playerId: "",
+//   playerName: "",
+//   jerseyName: "",
+//   playerInformation: {
+//     born: "",
+//     birthPlace: "",
+//     nickName: "",
+//     height: "",
+//     age: "",
+//     role: "",
+//     battingStyle: "",
+//     bowlingStyle: "",
+//     origin: "",
+//   },
+//   battingStats: {
+//     matches: { TEST: "", ODI: "", T20: "", IPL: "" },
+//     innings: { TEST: "", ODI: "", T20: "", IPL: "" },
+//     runs: { TEST: "", ODI: "", T20: "", IPL: "" },
+//     balls: { TEST: "", ODI: "", T20: "", IPL: "" },
+//     highest: { TEST: "", ODI: "", T20: "", IPL: "" },
+//     average: { TEST: "", ODI: "", T20: "", IPL: "" },
+//     strikeRate: { TEST: "", ODI: "", T20: "", IPL: "" },
+//     notOut: { TEST: "", ODI: "", T20: "", IPL: "" },
+//     fours: { TEST: "", ODI: "", T20: "", IPL: "" },
+//     sixes: { TEST: "", ODI: "", T20: "", IPL: "" },
+//     ducks: { TEST: "", ODI: "", T20: "", IPL: "" },
+//     totalFifties: { TEST: "", ODI: "", T20: "", IPL: "" },
+//     totalHundreds: { TEST: "", ODI: "", T20: "", IPL: "" },
+//     totalTwoHundreds: { TEST: "", ODI: "", T20: "", IPL: "" },
+//     totalThreeHundreds: { TEST: "", ODI: "", T20: "", IPL: "" },
+//   },
+//   bowlingStats: {
+//     matches: { TEST: "", ODI: "", T20: "", IPL: "" },
+//     innings: { TEST: "", ODI: "", T20: "", IPL: "" },
+//     runs: { TEST: "", ODI: "", T20: "", IPL: "" },
+//     balls: { TEST: "", ODI: "", T20: "", IPL: "" },
+//     maidens: { TEST: "", ODI: "", T20: "", IPL: "" },
+//     wickets: { TEST: "", ODI: "", T20: "", IPL: "" },
+//     average: { TEST: "", ODI: "", T20: "", IPL: "" },
+//     strikeRate: { TEST: "", ODI: "", T20: "", IPL: "" },
+//     bbi: { TEST: "", ODI: "", T20: "", IPL: "" },
+//     bbf: { TEST: "", ODI: "", T20: "", IPL: "" },
+//     economyRate: { TEST: "", ODI: "", T20: "", IPL: "" },
+//     fourWickets: { TEST: "", ODI: "", T20: "", IPL: "" },
+//     fiveWickets: { TEST: "", ODI: "", T20: "", IPL: "" },
+//     tenWickets: { TEST: "", ODI: "", T20: "", IPL: "" },
+//   },
+//   career: {
+//     debut: {
+//       T20: "",
+//       TEST: "",
+//       ODI: "",
+//       IPL: "",
+//       CL: "",
+//     },
+//     lastPlayed: {
+//       T20: "",
+//       TEST: "",
+//       ODI: "",
+//       IPL: "",
+//       CL: "",
+//     },
+//   },
+//   nationalCareer: "",
+//   playerImageUrl: "",
+// };
+
+// extra detail for player
+
+export const SetPlayerDispatchData = (playerData, upload) => {
+  return {
+    playerId: playerData?.playerId,
+    playerName: playerData?.playerName,
+    jerseyName: playerData?.jerseyName,
+    playerInformation: {
+      born: playerData?.born?.split("T")[0],
+      birthPlace: playerData?.birthPlace,
+      nickName: playerData?.nickName,
+      height: playerData?.height,
+      age: playerData?.age,
+      role: playerData?.role,
+      battingStyle: playerData?.battingStyle,
+      bowlingStyle: playerData?.bowlingStyle,
+      origin: playerData?.origin,
+    },
+    battingStats: {
+      innings: {
+        TEST: playerData?.battingStats?.inningsTest,
+        ODI: playerData?.battingStats?.inningsODI,
+        T20: playerData?.battingStats?.inningsT20,
+        IPL: playerData?.battingStats?.inningsIPL,
+      },
+      catches: {
+        TEST: playerData?.battingStats?.catchesTest,
+        ODI: playerData?.battingStats?.catchesODI,
+        T20: playerData?.battingStats?.catchesT20,
+        IPL: playerData?.battingStats?.catchesIPL,
+      },
+      stumps: {
+        TEST: playerData?.battingStats?.stumpsTest,
+        ODI: playerData?.battingStats?.stumpsODI,
+        T20: playerData?.battingStats?.stumpsT20,
+        IPL: playerData?.battingStats?.stumpsIPL,
+      },
+      runs: {
+        TEST: playerData?.battingStats?.runsTest,
+        ODI: playerData?.battingStats?.runsODI,
+        T20: playerData?.battingStats?.runsT20,
+        IPL: playerData?.battingStats?.runsIPL,
+      },
+      balls: {
+        TEST: playerData?.battingStats?.ballsTest,
+        ODI: playerData?.battingStats?.ballsODI,
+        T20: playerData?.battingStats?.ballsT20,
+        IPL: playerData?.battingStats?.ballsIPL,
+      },
+      highest: {
+        TEST: playerData?.battingStats?.highestTest,
+        ODI: playerData?.battingStats?.highestODI,
+        T20: playerData?.battingStats?.highestT20,
+        IPL: playerData?.battingStats?.highestIPL,
+      },
+      average: {
+        TEST: 
+          playerData?.battingStats?.averageTest
+        ,
+        ODI: playerData?.battingStats?.averageODI,
+        T20: playerData?.battingStats?.averageT20,
+        IPL: playerData?.battingStats?.averageIPL,
+      },
+      strikeRate: {
+        TEST: 
+          playerData?.battingStats?.strikeRateTest
+        ,
+        ODI: 
+          playerData?.battingStats?.strikeRateODI
+        ,
+        T20: 
+          playerData?.battingStats?.strikeRateT20
+        ,
+        IPL: 
+          playerData?.battingStats?.strikeRateIPL
+        ,
+      },
+      notOut: {
+        TEST: playerData?.battingStats?.notOutTest,
+        ODI: playerData?.battingStats?.notOutODI,
+        T20: playerData?.battingStats?.notOutT20,
+        IPL: playerData?.battingStats?.notOutIPL,
+      },
+      fours: {
+        TEST: playerData?.battingStats?.foursTest,
+        ODI: playerData?.battingStats?.foursODI,
+        T20: playerData?.battingStats?.foursT20,
+        IPL: playerData?.battingStats?.foursIPL,
+      },
+      sixes: {
+        TEST: playerData?.battingStats?.sixesTest,
+        ODI: playerData?.battingStats?.sixesODI,
+        T20: playerData?.battingStats?.sixesT20,
+        IPL: playerData?.battingStats?.sixesIPL,
+      },
+      ducks: {
+        TEST: playerData?.battingStats?.ducksTest,
+        ODI: playerData?.battingStats?.ducksODI,
+        T20: playerData?.battingStats?.ducksT20,
+        IPL: playerData?.battingStats?.ducksIPL,
+      },
+      totalFifties: {
+        TEST: playerData?.battingStats?.totalFiftiesTest,
+        ODI: playerData?.battingStats?.totalFiftiesODI,
+        T20: playerData?.battingStats?.totalFiftiesT20,
+        IPL: playerData?.battingStats?.totalFiftiesIPL,
+      },
+      totalHundreds: {
+        TEST: playerData?.battingStats?.totalHundredsTest,
+        ODI: playerData?.battingStats?.totalHundredsODI,
+        T20: playerData?.battingStats?.totalHundredsT20,
+        IPL: playerData?.battingStats?.totalHundredsIPL,
+      },
+      totalTwoHundreds: {
+        TEST: playerData?.battingStats?.totalTwoHundredsTest,
+        ODI: playerData?.battingStats?.totalTwoHundredsODI,
+        T20: playerData?.battingStats?.totalTwoHundredsT20,
+        IPL: playerData?.battingStats?.totalTwoHundredsIPL,
+      },
+      totalThreeHundreds: {
+        TEST: playerData?.battingStats?.totalThreeHundredsTest,
+        ODI: playerData?.battingStats?.totalThreeHundredsODI,
+        T20: playerData?.battingStats?.totalThreeHundredsT20,
+        IPL: playerData?.battingStats?.totalThreeHundredsIPL,
+      },
+    },
+    bowlingStats: {
+      innings: {
+        TEST: playerData?.bowlingStats?.inningsTest || 0,
+        ODI: playerData?.bowlingStats?.inningsODI,
+        T20: playerData?.bowlingStats?.inningsT20,
+        IPL: playerData?.bowlingStats?.inningsIPL,
+      },
+      runs: {
+        TEST: playerData?.bowlingStats?.runsTest,
+        ODI: playerData?.bowlingStats?.runsODI,
+        T20: playerData?.bowlingStats?.runsT20,
+        IPL: playerData?.bowlingStats?.runsIPL,
+      },
+      balls: {
+        TEST: playerData?.bowlingStats?.ballsTest,
+        ODI: playerData?.bowlingStats?.ballsODI,
+        T20: playerData?.bowlingStats?.ballsT20,
+        IPL: playerData?.bowlingStats?.ballsIPL,
+      },
+      maidens: {
+        TEST: playerData?.bowlingStats?.maidensTest,
+        ODI: playerData?.bowlingStats?.maidensODI,
+        T20: playerData?.bowlingStats?.maidensT20,
+        IPL: playerData?.bowlingStats?.maidensIPL,
+      },
+      wickets: {
+        TEST: playerData?.bowlingStats?.wicketsTest,
+        ODI: playerData?.bowlingStats?.wicketsODI,
+        T20: playerData?.bowlingStats?.wicketsT20,
+        IPL: playerData?.bowlingStats?.wicketsIPL,
+      },
+      average: {
+        TEST: 
+          playerData?.bowlingStats?.averageTest
+        ,
+        ODI: playerData?.bowlingStats?.averageODI,
+        T20: playerData?.bowlingStats?.averageT20,
+        IPL: playerData?.bowlingStats?.averageIPL,
+      },
+      strikeRate: {
+        TEST: 
+          playerData?.bowlingStats?.strikeRateTest
+        ,
+        ODI: 
+          playerData?.bowlingStats?.strikeRateODI
+        ,
+        T20: 
+          playerData?.bowlingStats?.strikeRateT20
+        ,
+        IPL: 
+          playerData?.bowlingStats?.strikeRateIPL
+        ,
+      },
+      bbi: {
+        TEST: playerData?.bowlingStats?.bbiTest,
+        ODI: playerData?.bowlingStats?.bbiODI,
+        T20: playerData?.bowlingStats?.bbiT20,
+        IPL: playerData?.bowlingStats?.bbiIPL,
+      },
+      bbm: {
+        TEST: playerData?.bowlingStats?.bbmTest,
+        ODI: playerData?.bowlingStats?.bbmODI,
+        T20: playerData?.bowlingStats?.bbmT20,
+        IPL: playerData?.bowlingStats?.bbmIPL,
+      },
+      economyRate: {
+        TEST: playerData?.bowlingStats?.economyRateTest,
+        ODI: playerData?.bowlingStats?.economyRateODI,
+        T20: playerData?.bowlingStats?.economyRateT20,
+        IPL: playerData?.bowlingStats?.economyRateIPL,
+      },
+      fourWickets: {
+        TEST: playerData?.bowlingStats?.fourWicketsTest,
+        ODI: playerData?.bowlingStats?.fourWicketsODI,
+        T20: playerData?.bowlingStats?.fourWicketsT20,
+        IPL: playerData?.bowlingStats?.fourWicketsIPL,
+      },
+      fiveWickets: {
+        TEST: playerData?.bowlingStats?.fiveWicketsTest,
+        ODI: playerData?.bowlingStats?.fiveWicketsODI,
+        T20: playerData?.bowlingStats?.fiveWicketsT20,
+        IPL: playerData?.bowlingStats?.fiveWicketsIPL,
+      },
+      economy: {
+        TEST: playerData?.bowlingStats?.fiveWicketsTest,
+        ODI: playerData?.bowlingStats?.fiveWicketsODI,
+        T20: playerData?.bowlingStats?.fiveWicketsT20,
+        IPL: playerData?.bowlingStats?.fiveWicketsIPL,
+      },
+      tenWickets: {
+        TEST: playerData?.bowlingStats?.tenWicketsTest,
+        ODI: playerData?.bowlingStats?.tenWicketsODI,
+        T20: playerData?.bowlingStats?.tenWicketsT20,
+        IPL: playerData?.bowlingStats?.tenWicketsIPL,
+      },
+    },
+    career: {
+      debut: {
+        T20: {
+          eventName: playerData?.debutT20EventName,
+          eventDate: new Date(playerData?.debutT20EventDate),
+        },
+        ODI: {
+          eventName: playerData?.debutODIEventName,
+          eventDate: new Date(playerData?.debutODIEventDate),
+        },
+        TEST: {
+          eventName: playerData?.debutTESTEventName,
+          eventDate: new Date(playerData?.debutTEEventDate),
+        },
+        IPL: {
+          eventName: playerData?.debutIPLEventName,
+          eventDate: new Date(playerData?.debutIPLEventDate),
+        },
+        CL: {
+          eventName: playerData?.debutCLEventName,
+          eventDate: new Date(playerData?.debutCLEventDate),
+        },
+      },
+      lastPlayed: {
+        T20: {
+          eventName: playerData?.lastPlayedT20EventName,
+          eventDate: new Date(playerData?.lastPlayedT20EventDate),
+        },
+        ODI: {
+          eventName: playerData?.lastPlayedODIEventName,
+          eventDate: new Date(playerData?.lastPlayedODIEventDate),
+        },
+        TEST: {
+          eventName: playerData?.lastPlayedTESTEventName,
+          eventDate: new Date(playerData?.lastPlayedTESTEventDate),
+        },
+        IPL: {
+          eventName: playerData?.lastPlayedIPLEventName,
+          eventDate: new Date(playerData?.lastPlayedIPLeventDate),
+        },
+        CL: {
+          eventName: playerData?.lastPlayedCLEventName,
+          eventDate: new Date(playerData?.lastPlayedCLEventDate),
+        },
+      },
+    },
+    matches: {
+      TEST: playerData?.matchesTest,
+      ODI: playerData?.matchesODI,
+      T20: playerData?.matchesT20,
+      IPL: playerData?.matchesIPL,
+    },
+    nationalCareer: playerData?.nationalfirstCareer+"-"+playerData?.nationallastCareer,
+    playerImageUrl: upload,
+  };
+};

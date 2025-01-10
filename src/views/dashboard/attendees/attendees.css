@@ -1,0 +1,126 @@
+.accounting{
+    width:auto;
+}
+
+.search{
+   width:200px
+}
+
+.pass{
+    margin-top: 6px;
+}
+
+.newpassword{
+    width:50%;
+}
+
+.npassword{
+    margin-top:6px;
+    margin-right:-55px;
+}
+
+.ncpassword{
+    width:50%;
+    margin-left:80px
+}
+
+.cnpassword{
+    margin-top:6px;
+    margin-left:-45px
+}
+
+.nc2password{
+    width:50%;
+}
+
+.bgback{
+    background-color:#eee;
+}
+
+.aclId{
+    color: black;
+}
+.gractive{
+    background-color: green;
+}
+.redactive{
+    background-color: red;
+}
+
+.act{
+    width: 25px;
+    height: 25px; 
+}
+
+.show{
+    display: inline-block;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.equityType{
+    width: auto;
+    display: inline-block;
+    margin-left: 16px;
+}
+
+.s2{
+    width: 200px;
+    display: flex;
+    gap: 10px;
+    margin-right: 16px;
+}
+
+.s4{
+    margin-top: 7px ;
+}
+
+.lock{
+    height: 18px; 
+    width: 18px;
+}
+
+.setting{
+    height: 18px;
+    width: 18px;
+}
+
+.custom-button {
+    width: 105px;
+    border-radius: 8px;
+    border: 1px solid #9d9d9d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .custom-button img {
+    max-width: 24px;
+    margin-bottom: 8px;
+  }
+  
+  .custom-button.active {
+    background: green;
+    color: white;
+  }
+  
+  .custom-button.inactive {
+    background: red;
+    color: white;
+  }
+  
+  .custom-button.default {
+    background: linear-gradient(-180deg, #fefefe, #e0e0e0);
+    color: black;
+  }
+  
+  .custom-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+  

@@ -1,0 +1,40 @@
+.mandatry {
+  color: #db5363;
+}
+.react-datepicker-wrapper {
+  display: block !important;
+}
+.react-datepicker__header {
+  background-color: #fff !important;
+}
+.react-datepicker {
+  border: 1px solid #fff !important;
+}
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle {
+  fill: #fff !important;
+  color: #fff !important;
+}
+.react-datepicker-popper .react-datepicker__triangle {
+  stroke: white;
+}
+.react-datepicker-popper {
+  box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.06) !important;
+}
+
+.classLoader {
+  position: fixed;
+  left: 60%;
+  top: 50%;
+}
+.fixed-width {
+  width: 200px; 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn-square {
+  width: 100px; /* Adjust the size as needed */
+  height: 60px;
+  border-radius: 0; /* Make sure there's no border radius */
+}
