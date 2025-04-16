@@ -4,7 +4,7 @@ import { store } from "../Redux";
 import { setSessionExpired } from '../Redux/auth/authSlice'; 
 
 const API = axios.create({
-  baseURL:'http://localhost:3004/api/v1',
+  baseURL:'https://eventmangementbe.onrender.com/api/v1',
   timeout: 1000 * 20, 
 });
 
