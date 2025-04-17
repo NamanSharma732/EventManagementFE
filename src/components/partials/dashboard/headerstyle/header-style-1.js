@@ -60,7 +60,7 @@ const HeaderStyle1 = memo(() => {
                 <Container fluid className="navbar-inner">
                     <MobildeOffcanvas />
                     <Navbar.Brand as="div" className="col-lg-2 col-lg-3 ">
-                        <Link to="/dashboard" className="d-flex">
+                        <Link to="#" className="d-flex">
                             <Logo color={'true'} />
                             <h4 className="logo-title d-none d-sm-block">Admin</h4>
                         </Link>
